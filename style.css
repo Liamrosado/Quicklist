@@ -31,3 +31,43 @@ box-sizing: border-box;
 --border-hover:#B9C2D0;
 
 }
+
+
+main{
+  max-width: 327px;
+  height: fit-content;
+  padding-inline: 2rem;
+  padding-top: 2.125rem;
+}
+
+#compras{
+    display: grid;
+    gap: 16px;
+    width: 325px;
+    
+   & h1{
+        font: var(--title);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width > 80rem){
+
+    main{
+        width: 631px;
+        height: fit-content;
+        margin-inline: 23.125rem;
+
+    }
+}

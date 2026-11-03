@@ -33,6 +33,8 @@ box-sizing: border-box;
 }
 
 
+
+
 main{
   max-width: 327px;
   height: fit-content;
@@ -47,6 +49,55 @@ main{
     
    & h1{
         font: var(--title);
+    }
+}
+
+#novo-item{
+    display: grid;
+    justify-content: center;
+    max-width: 326px;
+    margin-block: 2.5rem;
+    gap: 1rem;
+    border: none;
+    
+    
+    & input[name="item"]{
+        width:20.375rem;
+        height: 2.75rem;
+        border-radius: .75rem;
+        padding: .6875rem 1.125rem;
+        border-color: var(--border-primary);
+        font: 400 1rem/140% var(--font);
+        border-style: solid;
+
+        &:hover{
+            border-color: var(--border-hover);
+        }
+
+        &:focus{
+            outline-color: var(--brand-color);
+            color: var(--primary);
+        }
+
+        &:focus::placeholder{
+            color: var(--primary);
+            
+        }        
+    }
+    
+    & button{
+        width:20.375rem;
+        height: 2.75rem;
+        border-radius:.75rem;
+        background-color: var(--brand-color);
+        border-color:var(--brand-color);
+        border-style: hidden;
+        font: var(--label);
+        color:var(--bg-secondary);
+        
+        &:hover{
+            background-color: var(--hover);
+        }
     }
 
 }
@@ -64,10 +115,35 @@ main{
 
 @media (width > 80rem){
 
+    body{
+        max-width: 85.375rem;
+        min-height: auto;
+    }
+
     main{
-        width: 631px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        max-width: 631px;
         height: fit-content;
         margin-inline: 23.125rem;
-
+        margin-block: 8.5625rem;
     }
+
+    #novo-item{
+        width: 627px;
+        display: flex;
+
+        & input[type="text"]{
+           width:28.1875rem;
+        }
+
+        & button{
+            width: 10rem;
+        }
+    }
+
+        
+
+
 }

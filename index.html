@@ -22,8 +22,47 @@
                 <fieldset id="novo-item">
                     <input type="text" name="item" id="item" placeholder="Adicione um novo item">
                     <button type="submit">Adicionar item</button>
-
                 </fieldset>
+
+                <ul id="cadastrados">
+                    <div class="items">
+                        <div class="button">
+                            <input type="checkbox" name="Pão" id="Pão">
+                            <label for="Pão">Pão de Forma</label>
+                            <input type="image" name="remover" src="imgs/Frame.svg" alt="Remover">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="button">
+                            <input type="checkbox" name="Café" id="Café">
+                            <label for="Café">Café Preto</label>
+                            <input type="image" name="remover" src="imgs/Frame.svg" alt="Remover">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="button">
+                            <input type="checkbox" name="Suco" id="Suco">
+                            <label for="Suco">Suco de laranja</label>
+                            <input type="image" name="remover" src="imgs/Frame.svg" alt="Remover">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="button">
+                            <input type="checkbox" name="Bolacha" id="Bolacha">
+                            <label for="Bolacha">Bolacha</label>
+                            <input type="image" name="remover" src="imgs/Frame.svg" alt="Remover">
+                        </div>
+                    </div>
+                </ul>
+
+                
+                    <div id="removido" class="items desativado">
+                        <div class="button">
+                            <img src="imgs/warning-circle-filled.svg" alt="warning">
+                            <label for="alert">O item foi removido da lista</label>
+                            <input type="image" name="Delete" src="imgs/delete-small.svg" alt="Remover alerta">
+                        </div>
+                    </div>
             </form>
 
         </main>

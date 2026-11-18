@@ -33,9 +33,16 @@ box-sizing: border-box;
 }
 
 body{
+    width: auto;
     background-color: var(--bg-primary);
 }
 
+#Logo{
+    padding-top: 25px;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}
 
 main{
   max-width: 327px;
@@ -145,26 +152,33 @@ main{
     & .button{
         height: 1.25rem ;
         gap:.5rem ;
-
+        
         & label{
             width: 247px ;
         }
     }
 }
+
+
+.checked{
+    text-decoration: line-through;
     
-    
+}
+
 .desativado{
     display: none;
 }    
-    
-    
-    
-    
+
+
+
+
 
 @media (width > 80rem){
 
     body{
-        max-width: 85.375rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
         min-height: auto;
     }
 
